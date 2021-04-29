@@ -5,4 +5,4 @@ const Spinner = () => {
     return <div>Loading ...</div>
 }
 
-export default Spinner
+export default Spinner;
