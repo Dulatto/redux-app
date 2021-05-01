@@ -45,7 +45,6 @@ const ShoppingCartTable = ({ items, total, onIncrease, onDecrease, onDelete }) =
                         <th>Action</th>
                     </tr>
                 </thead>
-
                 <tbody>
                     {items.map(renderRow)}
                 </tbody>
