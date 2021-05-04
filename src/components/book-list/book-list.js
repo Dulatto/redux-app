@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
 import BookListItem from '../book-list-item';
-
 import { connect } from 'react-redux';
-
 import { withBookstoreService } from '../hoc';
 import { fetchBooks, bookAddedToCart } from '../../actions';
 import { compose } from '../../utils';
-
 import Spinner from '../spinner';
 import ErrorIndicator from '../error-indicator';
-
 import './book-list.css';
 
 const BookList = ({ books, onAddedToCart }) => {
@@ -38,7 +34,6 @@ class BookListContainer extends Component {
 
     render() {
         const { books, loading, error, onAddedToCart } = this.props;
-
         if (loading) {
             return <Spinner />;
         }
