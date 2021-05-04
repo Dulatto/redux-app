@@ -70,7 +70,6 @@ const mapDispatchToProps = {
     onIncrease: bookAddedToCart,
     onDecrease: bookRemovedFromCart,
     onDelete: allBooksRemovedFromCart
-
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(ShoppingCartTable);
